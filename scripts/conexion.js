@@ -6,11 +6,11 @@ import { getFirestore,addDoc,collection } from "https://www.gstatic.com/firebase
 
 const firebaseConfig = {
     apiKey: "",
-    authDomain: "proyectoyanbal-b5682.firebaseapp.com",
-    projectId: "proyectoyanbal-b5682",
-    storageBucket: "proyectoyanbal-b5682.appspot.com",
-    messagingSenderId: "1066013748074",
-    appId: "1:1066013748074:web:ac01cee51022c06b505313",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
     measurementId: "G-E9PYP6S7Q4"
   };
   
