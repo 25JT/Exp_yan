@@ -1,51 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 body{
-    background-color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #000000; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar{
+    background-color: rgb(255, 105, 44);
+}
+h1{
+    font-family: "Oswald", sans-serif;
+    color: #000000; /* Color de los encabezados */
+    margin-top: 0;
+    margin: auto;
 }
 
-/* Asegura que la imagen ocupe el 100% de la pantalla */
-#welcome-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+#video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según necesites */
+    width: 100%; /* Ajusta el ancho según necesites */
+    
+}
+video {
+    max-width: 90%; /* o el porcentaje que mejor se ajuste a tu diseño */
+    max-height: 90%; /* mantiene el aspecto y evita que se salga de la pantalla */
+    border: 5px solid #ffffff; /* Borde blanco */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
     width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Mantiene la relación de aspecto, recortando si es necesario */
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
     display: block;
-    cursor: pointer;
-    transition: opacity 1s ease;
+}.inicio{
+    background-color: #9b9b9b;
 }
-
-/* Contenedor de la imagen */
-#image-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Hace que el contenedor tenga la altura completa de la pantalla */
-    overflow: hidden;
-}
-
-/* Centrar el mensaje de bienvenida */
-#welcome-message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*YANBAL BENEFICIOS INICIO*/
+.benefits-section {
     text-align: center;
-    color: white; /* Color del texto, puedes ajustarlo según sea necesario */
-    opacity: 0;
-    transition: opacity 1s ease;
+    margin: 50px 0;
 }
-
-#main-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0;
-    transition: opacity 1s ease;
-    width: 80%; /* Ajusta según el contenido */
+.benefits-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
-
-#main-content.show {
-    opacity: 1;
+.benefits-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
+.benefits-item {
+    flex: 1 1 20%;
+    margin: 10px;
+    max-width: 250px;
+}
+.benefits-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.benefits-item h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.benefits-item p {
+    font-size: 1rem;
+    color: #555;
+}
+/*YANBAL BENEFICIOS FINALIZA*/
