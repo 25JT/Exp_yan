@@ -1,32 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-body{
+
+body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    color: #000000; /* Color del texto */
-    line-height: 1.6; /* Espaciado entre líneas */
+    color: #000000;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    
-}
-.navbar{
-    background-color: rgb(255, 105, 44);
-}
-h1{
-    font-family: "Oswald", sans-serif;
-    color: #000000; /* Color de los encabezados */
-    margin-top: 0;
-    margin: auto;
+    background-color: #f5f5f5;
 }
 
-#video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ajusta la altura según necesites */
-    width: 100%; /* Ajusta el ancho según necesites */
+.navbar {
+    background-color: rgb(245, 245, 245);
+    border: 1.5px solid #000000;
+}
+
+.navbar-brand {
+    font-family: 'Lato';
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    color: #ffffff;
+    margin-top: 0;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(255, 105, 44);
+    text-align: center;
+}
+
+h5 {
+    color: rgb(255, 105, 44);
+}
+
+p {
+    color: black;
+    font-weight: bold;
+}
+
+.inicio {
+    background-color: rgb(255, 105, 44);
+    padding: 20px 0;
+}
+
+.second {
+    background-color: #ffffff;
+    padding: 20px;
     
 }
+
+.nuestro {
+    padding: 20px;
+}
+
+/* Video */
 video {
     max-width: 90%; /* o el porcentaje que mejor se ajuste a tu diseño */
     max-height: 90%; /* mantiene el aspecto y evita que se salga de la pantalla */
@@ -37,40 +67,182 @@ video {
     max-width: 1000px;
     margin: 0 auto;
     display: block;
-}.inicio{
-    background-color: #9b9b9b;
 }
-/*YANBAL BENEFICIOS INICIO*/
-.benefits-section {
-    text-align: center;
-    margin: 50px 0;
-}
-.benefits-title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
+
+/* Beneficios */
 .benefits-row {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
+
 .benefits-item {
-    flex: 1 1 20%;
+    flex: 1 1 calc(50% - 20px);
     margin: 10px;
-    max-width: 250px;
+    max-width: 300px;
+    text-align: center;
 }
+
 .benefits-item img {
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
 }
+
 .benefits-item h5 {
     font-size: 1.25rem;
     margin-bottom: 10px;
 }
+
 .benefits-item p {
     font-size: 1rem;
     color: #555;
 }
-/*YANBAL BENEFICIOS FINALIZA*/
+
+/* RUTA DE CRECIMIENTO */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #ff6a44;
+    color: white;
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: #ffe9e3;
+    color: #333;
+}
+
+.card-footer {
+    background-color: #fff;
+    color: #333;
+}
+
+.etapa {
+    margin-bottom: 20px;
+}
+
+/* ESCALERA AL ÉXITO */
+.escalera-exito {
+    background-color: rgb(255, 105, 44);
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.escalera-exito h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.escalera-exito p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.step {
+    background-color: #F4AB94;
+    color: #000000;
+    padding: 15px;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(230, 230, 230, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: scale(1.05);
+}
+
+.step p {
+    margin: 5px 0;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+.step p:last-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Estilo para la imagen del carro */
+.car-icon {
+    width: 50px;
+    height: 25px;
+    background-image: url('Imagenes/Imagen1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .benefits-item {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .escalera-exito {
+        padding: 20px;
+    }
+
+    video {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .escalera-exito h2 {
+        font-size: 2rem;
+    }
+
+    .escalera-exito p {
+        font-size: 1rem;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+    }
+}
