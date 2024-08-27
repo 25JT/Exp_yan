@@ -1,3 +1,4 @@
+
 // Animaciones con Anime.js
 document.addEventListener('DOMContentLoaded', function() {
     anime({
@@ -29,4 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    var typed = new Typed('#Unete', {
+      strings: ["EL PODER DE NOSTORAS", " BIENVENIDAS FUTURAS CONSULTORAS"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: false,
+      smartBackspace: true
+    });
+  });
