@@ -5,31 +5,32 @@ export  async function enviar() {
 
     let nombre = document.getElementById('nombre').value;
     let correo = document.getElementById('correo').value;
-    let ciudad = document.getElementById('ciudad').value;
+    let telefono = document.getElementById('telefono').value;
     let msg = document.getElementById('msg').value;
 
-    if (nombre ===' ' || correo === ' ' || ciudad === '') {
-        alert("Por favor rellene todos los campos")
+    if (nombre ===' ' || correo === ' ' || telefono === '') {
+        
+        swal("😬","Por favor rellene todos los campos","error");
         return
     }else{
         try {
             const docRef = await addDoc(collection(db, "mensajes"), {
               nombre: nombre,
               correo: correo,
-              ciudad: ciudad,
+              telefono: telefono,
               mensaje: msg
     
             });
             document.getElementById('nombre').value = ' ';
             document.getElementById('correo').value = ' ';
-            document.getElementById('ciudad').value = ' ';
+            document.getElementById('telefono').value = ' ';
             document.getElementById('msg').value = ' ';
 
-            alert("Mensaje enviado con éxito");
+            swal("📨","Mensaje enviado con éxito","success");
      
           } catch (e) {
             console.error("Error adding document: ", e);
-            alert("Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.");
+            swal("😓","Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.","error");
           }
     }
     
