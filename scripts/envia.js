@@ -8,12 +8,12 @@ export  async function enviar() {
     let ciudad = document.getElementById('ciudad').value;
     let msg = document.getElementById('msg').value;
 
-    if (nombre ===' ' || correo === ' ' || ciudad === '' || msg ==='') {
+    if (nombre ===' ' || correo === ' ' || ciudad === '') {
         alert("Por favor rellene todos los campos")
         return
     }else{
         try {
-            const docRef = await addDoc(collection(db, "users"), {
+            const docRef = await addDoc(collection(db, "mensajes"), {
               nombre: nombre,
               correo: correo,
               ciudad: ciudad,
