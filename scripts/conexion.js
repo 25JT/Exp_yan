@@ -5,7 +5,7 @@ import { } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js"
 import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js"
 
 const firebaseConfig = {
-    apiKey: "",
+    apiKey: "AIzaSyDIoJTuOLu3lf0X7AP3YsfpxjExaSMWfCQ",
     authDomain: "proyectoyanbal-b5682.firebaseapp.com",
     projectId: "proyectoyanbal-b5682",
     storageBucket: "proyectoyanbal-b5682.appspot.com",
