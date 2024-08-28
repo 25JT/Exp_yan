@@ -311,25 +311,25 @@
 
   <form class="row g-3 nuestro">
     <div class="col-md-6">
-      <label for="inputEmail4" class="form-label">NOMBRE</label>
-      <input type="email" class="form-control" id="inputEmail4">
+      <label class="form-label">NOMBRE</label>
+      <input type="text" class="form-control" id="nombre">
     </div>
     <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">CORREO</label>
-      <input type="password" class="form-control" id="inputPassword4">
+      <label for="correo" class="form-label">CORREO</label>
+      <input type="email" class="form-control" id="correo">
     </div>
     <div class="col-12">
-      <label for="inputAddress" class="form-label">CIUDAD</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      <label for="ciudad" class="form-label">CIUDAD</label>
+      <input type="text" class="form-control" id="ciudad" placeholder="Escribe aqui">
     </div>
     <div class="col-12">
-      <label for="inputAddress2" class="form-label">MENSAJE</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      <label for="msg" class="form-label">MENSAJE</label>
+      <input type="text" class="form-control" id="msg" placeholder="Apartment, studio, or floor">
     </div>
       </select>
     </div>
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="submit" class="btn btn-primary" onclick="enviar()">Enviar</button>
     </div>
   </form>
   

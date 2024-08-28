@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebas
 import { } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-storage.js"
 import { } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js"
 import { } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js"
-import { getFirestore,addDoc,collection } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js"
+import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js"
 
 const firebaseConfig = {
     apiKey: "",
@@ -17,4 +17,4 @@ const firebaseConfig = {
   // Initialize Firebase
   export const app = initializeApp(firebaseConfig);
   export const db = getFirestore(app);
-
+  export { addDoc, collection } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
