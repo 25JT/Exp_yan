@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
       typeSpeed: 60,
       backSpeed: 40,
       loop: false,
-      smartBackspace: true
+      smartBackspace: true,
+      showCursor: false
     });
   });
